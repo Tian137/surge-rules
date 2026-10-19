@@ -37,3 +37,11 @@ IP-CIDR,208.43.122.128/27,no-resolve
 IP-CIDR,34.224.0.0/12,no-resolve
 IP-CIDR,50.22.198.204/30,no-resolve
 IP-CIDR,54.242.0.0/15,no-resolve
+# Meta 系其他官方域名（2026-10-19 追加；来源 blackmatrix7 Facebook.list 人工筛选，仿冒/营销域名已剔除）
+DOMAIN-SUFFIX,fb.watch
+DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,messenger.com
+DOMAIN-SUFFIX,m.me
+DOMAIN-SUFFIX,threads.net
+DOMAIN-SUFFIX,oculus.com
+DOMAIN-SUFFIX,oculuscdn.com
