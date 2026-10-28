@@ -283,6 +283,7 @@ rules:
   - DOMAIN-KEYWORD,oracle,SG
   - DOMAIN-KEYWORD,claude,US
   - DOMAIN-SUFFIX,mayalism.de,HK
+  - DOMAIN-SUFFIX,hark.com,US
   - DOMAIN-SUFFIX,nodeseek.com,DE
   - DOMAIN-SUFFIX,yeahfast.com,DIRECT
   - DOMAIN-SUFFIX,dragonli.misaka.be,DIRECT
