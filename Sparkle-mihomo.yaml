@@ -52,6 +52,9 @@ dns:
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
   fallback:
     - 'https://cloudflare-dns.com/dns-query'
     - 'https://dns.google/dns-query'
