@@ -55,7 +55,6 @@ dns:
   fallback:
     - 'https://cloudflare-dns.com/dns-query'
     - 'https://dns.google/dns-query'
-    - 'https://dns.alidns.com/dns-query'
   fallback-filter:
     geoip: true
     geoip-code: CN
