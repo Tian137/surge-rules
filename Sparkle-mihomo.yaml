@@ -13,10 +13,13 @@ external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-
 
 dns:
   enable: true
-  ipv6: true
+  ipv6: false
   listen: 127.0.0.1:53
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
   fake-ip-filter:
     - '*.lan'
     - localhost.ptlogin2.qq.com
@@ -61,6 +64,9 @@ dns:
 
 sniffer:
   enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
   sniff:
     HTTP:
       ports:
@@ -77,7 +83,7 @@ sniffer:
         - 8443
   skip-domain:
     - 'Mijia Cloud'
-    - +.push.apple.com
+    - "+.push.apple.com"
 
 tun:
   enable: true
@@ -93,6 +99,7 @@ tun:
     - 172.16.0.0/12
     - 172.168.200.0/22
     - fc00::/7
+    - fe80::/10
 
 proxies: []
 
