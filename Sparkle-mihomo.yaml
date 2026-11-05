@@ -304,6 +304,9 @@ rules:
   - DOMAIN-SUFFIX,yeahfast.com,DIRECT
   - DOMAIN-SUFFIX,dragonli.misaka.be,DIRECT
   - IP-CIDR,172.168.201.111/32,DIRECT,no-resolve
+  - PROCESS-NAME,tailscaled.exe,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,fd7a:115c:a1e0::/48,DIRECT,no-resolve
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
   - RULE-SET,Download,DIRECT
