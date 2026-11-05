@@ -296,6 +296,10 @@ rule-providers:
     url: 'https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml'
     path: ./ruleset/ChinaIPs_IP.yaml
 rules:
+  - IP-CIDR,172.168.201.111/32,DIRECT,no-resolve
+  - PROCESS-NAME,tailscaled.exe,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,fd7a:115c:a1e0::/48,DIRECT,no-resolve
   - DOMAIN-KEYWORD,oracle,SG
   - DOMAIN-KEYWORD,claude,US
   - DOMAIN-SUFFIX,mayalism.de,HK
@@ -303,10 +307,6 @@ rules:
   - DOMAIN-SUFFIX,nodeseek.com,DE
   - DOMAIN-SUFFIX,yeahfast.com,DIRECT
   - DOMAIN-SUFFIX,dragonli.misaka.be,DIRECT
-  - IP-CIDR,172.168.201.111/32,DIRECT,no-resolve
-  - PROCESS-NAME,tailscaled.exe,DIRECT
-  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
-  - IP-CIDR6,fd7a:115c:a1e0::/48,DIRECT,no-resolve
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
   - RULE-SET,Download,DIRECT
